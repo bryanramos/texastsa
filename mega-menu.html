@@ -1,0 +1,581 @@
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Show search button at the end of nav on big screens */
+@media screen and (min-width: 992px) {
+    .navbar-options {
+    order: 3;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333333;
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    display: block;
+}
+
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.nav-link span {
+    display: block;
+    color: #757575;
+}
+
+.nav-item .nav-link span:first-of-type {
+    color: #212121;
+    margin-bottom: 4px;
+}
+
+.megamenu-aside {
+    list-style: none;
+    margin: 40px 20px 12px;
+}
+
+.megamenu-aside li {
+    margin-bottom: 32px;
+}
+
+.site-search-button {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+  <a href="#" class="navbar-brand font-weight-bold d-block">
+      <img class="visible-fixed" alt="Logo Texas TSA" src="https://www.texastsa.org/wp-content/uploads/2019/10/tsa_logo_black.png" width="192px">
+  </a>
+    <div class="navbar-options">
+        <button class="site-search-button type="button">
+            <svg class="_2-tlh _1azRR _1mPD6" version="1.1" viewBox="0 0 32 32" width="20" height="20" aria-hidden="false"><path d="M31 28.64l-7.57-7.57a12.53 12.53 0 1 0-2.36 2.36l7.57 7.57zm-17.5-6a9.17 9.17 0 1 1 6.5-2.64 9.11 9.11 0 0 1-6.5 2.67z"></path></svg>
+        </button>
+        <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+  <div id="navbarContent" class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <!-- Megamenu-->
+      <li class="nav-item dropdown megamenu"><a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">About Us</a>
+        <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+          <div class="nav-container">
+            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: #fff; background-size: cover; border-right: 1px solid #d8d8d8;">
+                
+                    <ul class="megamenu-aside">
+                        <li><h2>Students learning to lead in a technical world.</h2></li>
+                        <li>Learn More</li>
+                    </ul>
+                
+                </div>
+              <div class="col-lg-7 col-xl-8">
+                <div class="p-4">
+                  <div class="row">
+
+                    <div class="col-lg-6 mb-4">
+                      <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>About Us</span>
+                                <span>Learn about our national association.</span>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Hall of Honors</span>
+                                <span>Honoring great figures in our TSA community</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>State Handbook</span>
+                                <span>Organizing and conducting guide</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>State Rulebook</span>
+                                <span>Read Our Official Rulebook</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Sponsorship</span>
+                                <span>Help support the learning process</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Affiliate</span>
+                                <span>Join TSA and participate in great opportunities!</span>
+                            </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                      <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Texas TSA Officers</span>
+                                <span>Meet the State Officer team</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Regional Associations</span>
+                                <span>Associations that make up Texas TSA</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Board of Directors and Staff</span>
+                                <span>Learn about Texas TSA Operations</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Community</span>
+                                <span>See Texas TSA's impact in the Texas community</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Contest Management Team</span>
+                                <span>Individuals responsible for contest operations</span>
+                            </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown megamenu"><a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Conferences</a>
+        <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+          <div class="tg-container">
+            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: #fff; background-size: cover; border-right: 1px solid #d8d8d8;">
+                
+                    <ul class="megamenu-aside">
+                        <li><h2>2019 State Leadership Conference</h2></li>
+                        <li>Learn More</li>
+                    </ul>
+                
+                </div>
+              <div class="col-lg-7 col-xl-8">
+                <div class="p-4">
+                  <div class="row">
+
+                    <div class="col-lg-6 mb-4">
+                      <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Regional Conferences</span>
+                                <span>Regional competitions held in February-March every year</span>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>State Leadership Conference</span>
+                                <span>Designed to increase leadership, communication and teambuilding skills</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>State Conference</span>
+                                <span>Texas TSA State Contest/Conference held in Fort Worth</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>National Conference</span>
+                                <span>National TSA Conference/Contest</span>
+                            </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                      <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Calendar</span>
+                                <span>Discover what's coming up</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-small pb-0">
+                                <span>Fort Worth Convention Center Safety Regulations</span>
+                                <span>Learn about convention center safety at State Contest</span>
+                            </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    <!-- CONTEST TAB -->
+    <li class="nav-item dropdown megamenu"><a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle ">Contest</a>
+        <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+            <div class="tg-container">
+                <div class="row bg-white rounded-0 m-0 shadow-sm">
+                    <div class="col-lg-7 col-xl-8">
+                        <div class="p-4">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>High School NQEs</span>
+                                                <span>National qualifying events for high school students</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Middle School NQEs</span>
+                                                <span>National qualifying events for middle school students</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Unique to Texas</span>
+                                                <span>Events for Texas Only</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Category Projects</span>
+                                                <span>Hundreds of projects for students to compete in</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>TEAMS</span>
+                                                <span>One-day competition for STEM skill application</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Vex Robotics</span>
+                                                <span>Hands-on competition for mastering STEM skills</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>General Information</span>
+                                                <span>Important information for contest</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Fort Worth Information</span>
+                                                <span>Information about Fort Worth, Texas</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Schedule</span>
+                                                <span>See the schedule for State Contest</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Sign Up to Judge</span>
+                                                <span>Contribute to the TSA community by signing up to judge</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Contest Management Team</span>
+                                                <span>Individuals responsible for contest operations</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: #fff; background-size: cover; border-left: 1px solid #d8d8d8;">
+                        <div class="p-4">
+                            <div class="row">
+                                <ul class="list-unstyled">
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-small pb-0">
+                                            <span>State Rulebook</span>
+                                            <span>Read Our Official Rulebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-small pb-0">
+                                            <span>Protests</span>
+                                            <span>Read about contest event protesting</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-small pb-0">
+                                            <span>What is LEAP?</span>
+                                            <span>Learn about LEAP</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-small pb-0">
+                                            <span>Competition Forms</span>
+                                            <span>Download Important Forms for Competition</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-small pb-0">
+                                            <span>Levels and Rules</span>
+                                            <span>Breakdown of grades used to designate categories</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-small pb-0">
+                                            <span>State Advisor Approval Events</span>
+                                            <span>Events requiring approval by the state advisor</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- ADVISORS TAB -->
+    <li class="nav-item dropdown megamenu"><a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle ">Advisors</a>
+        <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+            <div class="tg-container">
+                <div class="row bg-white rounded-0 m-0 shadow-sm">
+                    <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: #fff; background-size: cover; border-right: 1px solid #d8d8d8;">
+                        <ul class="megamenu-aside">
+                            <li><h2>Join TSA</h2></li>
+                            <li>Become a part of national organization offering members exciting career, leadership, and competitive opportunities.</li>
+                            <li>Learn more</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 col-xl-8">
+                        <div class="p-4">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Chapter Excellence</span>
+                                                <span>Awarded annually to one middle school and one high school chapter</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>TSA National Honor Society</span>
+                                                <span>Honoring members who excel in academics, leadership and service</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Advisor of the Year</span>
+                                                <span>Awarded anually to one middle school and one high school advisor</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Academic Letter Guidelines</span>
+                                                <span>Suggested guidelines for implementing academic letters</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Policies and FAQs</span>
+                                                <span>Policies on affiliation, chapter management, etc</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Scholarships</span>
+                                                <span>Advisor scholarship information</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Affiliation</span>
+                                                <span>Information about joining TSA</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Advisor Deadlines</span>
+                                                <span>Important deadlines for advisors</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Regional Associations</span>
+                                                <span>Associations that make up Texas TSA</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Register My Chapter</span>
+                                                <span>Link to Register My Chapter system</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- RESOURCES TAB -->
+    <li class="nav-item dropdown megamenu"><a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle ">Resources</a>
+        <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+            <div class="tg-container">
+                <div class="row bg-white rounded-0 m-0 shadow-sm">
+                    <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: #fff; background-size: cover; border-right: 1px solid #d8d8d8;">
+                        <ul class="megamenu-aside">
+                            <li><h2>See What's New</h2></li>
+                            <li>Discover what's new in TSA.</li>
+                            <li>Learn more</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 col-xl-8">
+                        <div class="p-4">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Texas Career Technology Education</span>
+                                                <span>Resource Center for Texas CTE, Powered by TEA</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Tech and Engineering Council</span>
+                                                <span>Information about CTAT</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>ITEEA</span>
+                                                <span>Learn about the International Technology and Engineering Educators Association</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>TSA Computer Science</span>
+                                                <span>Learn about Computer Science opportunities through TSA</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Communications</span>
+                                                <span>Texas TSA News</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Photo Gallery</span>
+                                                <span>Texas TSA Pictures</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link text-small pb-0">
+                                                <span>Logos and TSA Media</span>
+                                                <span>Download TSA logos</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+      <li class="nav-item"><a href="" class="nav-link">Rulebook</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+
+// Dropdown Menu Fade    
+jQuery(document).ready(function(){
+    jQuery(".dropdown").hover(
+        function() { $('.dropdown-menu', this).stop().fadeIn("fast");
+        },
+        function() { $('.dropdown-menu', this).stop().fadeOut("fast");
+    });
+});
+
+</script>
