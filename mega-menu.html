@@ -36,7 +36,16 @@ body {
     bottom: 0;
 }
 
+
+#megamenu:hover + .dropdwon-toggle::after {
+    display: block;
+}
+
 .navbar-light .navbar-nav .nav-link:hover::after {
+    display: block;
+}
+
+.navbar-light .navbar-nav .nav-link.active::after {
     display: block;
 }
 
@@ -69,9 +78,12 @@ body {
     margin-bottom: 32px;
 }
 
-.site-search-button {
+button.site-search-button {
     padding: 10px;
     margin-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
 }
 
 
@@ -572,9 +584,13 @@ body {
 // Dropdown Menu Fade    
 jQuery(document).ready(function(){
     jQuery(".dropdown").hover(
-        function() { $('.dropdown-menu', this).stop().fadeIn("fast");
+        function() { 
+            $('.dropdown-menu', this).stop().fadeIn("fast");
+            $('.nav-link', this).stop().addClass("active");
         },
-        function() { $('.dropdown-menu', this).stop().fadeOut("fast");
+        function() { 
+            $('.dropdown-menu', this).stop().fadeOut("fast");
+            $('.nav-link', this).stop().removeClass("active");
     });
 });
 
